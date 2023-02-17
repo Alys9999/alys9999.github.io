@@ -12,6 +12,14 @@ h1{
     
 }
 
+h4{
+    font-size: 4vh;
+}
+
+p{
+    font-size: 3vh;
+}
+
 header{
     background-color: rgb(240, 240, 245);
     height: 10vh;
