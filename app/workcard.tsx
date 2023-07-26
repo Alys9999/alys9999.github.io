@@ -11,7 +11,7 @@ export default function WorkCard({iconadd, alttext, gifadd, children}: any){
                 <p className="text-slate-950 px-3">{children}</p>
             </div>
             <div className=" pt-6">
-                <Image priority={true} src={gifadd}width={960} height={720} alt={altextInter}></Image>
+                <Image priority={true} src={gifadd} width={960} height={720} alt={altextInter}></Image>
             </div>
         </div>
     )
