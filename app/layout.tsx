@@ -5,7 +5,7 @@ import { Jura } from 'next/font/google'
 
 
 
-const inter = Jura({ subsets: ['latin'] })
+const jura = Jura({ subsets: ['latin'], display: 'swap',  })
 
 export default function RootLayout({
   children,
@@ -13,7 +13,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={jura.className}>
+      <head>
+        
+      </head>
       <body>{children}</body>
     </html>
   )
