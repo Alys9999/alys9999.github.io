@@ -28,6 +28,7 @@ export default function Home() {
               <div className='flex flex-row flex-grow my-3'>
                 <p className='text-slate-950'>My&nbsp;</p><p className=' bg-black rounded-lg px-2'>Work</p></div>
                 <WorkCard iconadd='/PrelovedLogo.png' alttext='Preloved' gifadd='/PrelovedInteraction.gif'>Preloved - a second-hand product e-commerce app based on community sections.</WorkCard>
+                <WorkCard iconadd='/PAlogo.png' alttext='Puerta Abierta' gifadd='/PAInteraction.gif'>Puerta Abierta - a financial literacy education website. </WorkCard>
             </div>
           </div>
           
