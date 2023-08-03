@@ -3,38 +3,38 @@ import Image from 'next/image'
 import RootLayout from './layout'
 import Header from './header'
 import WorkCard from './workcard'
+import Link from 'next/link'
+import EmailToster from './emailToster'
+
 
 
 export default function Home() {
+  
   return (
     <RootLayout>
       <Header></Header>
-      <div className='flex flex-col bg-slate-100 py-3 mx-12 rounded-lg'>
+      <div className=' h-32'></div>
+      <div className='flex flex-col bg-[#dcdcdc] py-14 mx-12 rounded-lg '>
         <div id='mainContent' className='flex flex-row'>
-          <div className='flex flex-col px-3 space-y-6'>
-            <Image priority={true} src='/github.png'width={50} height={50} alt='github icon'></Image>
-            <Image priority={true} src='/linkedin.png'width={50} height={50} alt='linkedin icon'></Image>
-            <Image priority={true} src='/gmail.png'width={50} height={50} alt='gmail icon'></Image>
+          <div className='flex flex-col pl-14 space-y-6 font-bold'>
+            <Link href='https://github.com/Alys9999' target='_blank'><Image priority={true} src='/github.png'width={50} height={50} alt='github icon'></Image></Link>
+            <Link href='https://www.linkedin.com/in/zhaoyang-lu-3a2814261/' target='_blank'><Image priority={true} src='/linkedin.png'width={50} height={50} alt='linkedin icon'></Image></Link>
+            <EmailToster/>
           </div>
 
-          <div className='flex flex-col mx-6 divide-y divide-slate-900'>
-            <div className='flex flex-col flex-grow'>
-              <h3 className=' text-slate-950'>Web Developer & UI/UX Designer</h3>
-              <h1 className='text-slate-950'>Zhaoyang Lu</h1>
-              <div className='flex flex-row'><p className=' text-slate-950'>I graduated from&nbsp; </p><p className=' bg-black rounded-lg px-2'> University of California, Irvine</p></div>
-              <div className='flex flex-row'><p className=' text-slate-950'>I major in&nbsp; </p><p className=' bg-black rounded-lg px-2'>Informatics</p></div>
+          <div className='flex flex-col mx-6 divide-y px-3 divide-slate-900'>
+            <div className='flex flex-col flex-grow space-y-3'>
+              <h3 className=' text-slate-950 text-5xl'>Web Developer & UI/UX Designer</h3>
+              <h1 className='text-slate-950 text-8xl pb-5'>Zhaoyang Lu</h1>
+              <div className='flex py-3'><p className=' text-slate-950 text-3xl'>I graduated from&nbsp; </p><p className=' bg-black rounded-lg px-2 text-3xl'> University of California, Irvine</p></div>
+              <div className='flex pb-3'><p className=' text-slate-950 text-3xl'>I major in&nbsp; </p><p className=' bg-black rounded-lg px-2 text-3xl'>Informatics</p></div>
             </div>
             <div id='workContent' className='flex flex-col'>
               <div className='flex flex-row flex-grow my-3'>
-                <p className='text-slate-950'>My&nbsp;</p><p className=' bg-black rounded-lg px-2'>Work</p></div>
-                <WorkCard iconadd='/PrelovedLogo.png' alttext='Preloved' gifadd='/PrelovedInteraction.gif'>Preloved - a second-hand product e-commerce app based on community sections.</WorkCard>
-                <WorkCard iconadd='/PAlogo.png' alttext='Puerta Abierta' gifadd='/PAInteraction.gif'>Puerta Abierta - a financial literacy education website. </WorkCard>
+                <p className='text-slate-950 text-3xl'>My&nbsp;</p><p className=' bg-black rounded-lg px-2 text-3xl'>Work</p></div>
+                <WorkCard iconadd='/PrelovedLogo.png' alttext='Preloved' gifadd='/PrelovedInteraction.gif'>a second-hand product e-commerce app based on community sections.</WorkCard>
+                <WorkCard iconadd='/PAlogo.png' alttext='Puerta Abierta' gifadd='/PAInteraction.gif'>a financial literacy education website. </WorkCard>
             </div>
-          </div>
-          
-          <div className='flex flex-col mr-3'>
-            <Image priority={true} src='/me.png'width={120} height={120} alt='me pic'></Image>
-            <p className='text-slate-950 text-xs'>Can be called by: Alyssa<br></br>Pronoun: She/She++</p>
           </div>
         </div>
       </div>
