@@ -22,7 +22,7 @@ export default function EmailToster(){
             <button onClick={()=>copyAndRemind("41v1rj@gmail.com")}><Image priority={true} src='/gmail.png'width={50} height={50} alt='gmail icon'></Image></button>
             {open && (
               <div>
-                <Alert severity="info">Email address copied</Alert>
+                <Alert severity="info" className='text-black'>Email address copied</Alert>
                 <button onClick={handleClose} className=' text-black'>Close</button>
               </div>
             )}
