@@ -1,9 +1,12 @@
 import './globals.css'
-import type { Metadata } from 'next'
+
 import { Jura } from 'next/font/google'
 
 
+import Header from './header'
 
+
+//when i put contacts in rootlayout it makes hydrations error, confused.
 
 const jura = Jura({ subsets: ['latin'], display: 'swap',  })
 
@@ -15,9 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={jura.className}>
       <head>
-        
+         <title>Zhaoyang Lu's Portfolio</title>
       </head>
-      <body>{children}</body>
+      <body>
+      <Header></Header>
+      {children}
+        
+        </body>
     </html>
   )
 }
