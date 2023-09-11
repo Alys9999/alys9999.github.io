@@ -45,10 +45,10 @@ export default function PPPage() {
            <div>
             <h3>Use Case Diagram Iteration</h3>
               <p>
-              As our understanding of our sponsor's needs evolved, so did our use case diagram. 
-              The diagram underwent multiple iterations to more accurately reflect the platform's expanded scope and functionalities. 
-              These iterative changes have been instrumental in guiding the development team and clarifying the project's objectives, 
-              ensuring that we are aligned with our sponsor's vision for the platform.
+              As our understanding of our sponsor&apos;s needs evolved, so did our use case diagram. 
+              The diagram underwent multiple iterations to more accurately reflect the platform&apos;s expanded scope and functionalities. 
+              These iterative changes have been instrumental in guiding the development team and clarifying the project&apos;s objectives, 
+              ensuring that we are aligned with our sponsor&apos;s vision for the platform.
               </p>
            </div>
 
@@ -69,7 +69,7 @@ export default function PPPage() {
               </h3>
               <p>
               Through multiple iterations, we developed wireframes that strike a balance between aesthetic appeal and functionality. 
-              These wireframes serve as the blueprint for the website's layout, 
+              These wireframes serve as the blueprint for the website&apos;s layout, 
               ensuring that users can easily navigate through the platform.
               </p>`
            </div>
