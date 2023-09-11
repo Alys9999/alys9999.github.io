@@ -7,7 +7,7 @@ export default function BlogList() {
     return (
       <RootLayout>
        <Contacts>
-        
+        <h1>Nothing here yet!</h1>
        </Contacts>
       </RootLayout>
     )

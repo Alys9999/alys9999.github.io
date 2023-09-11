@@ -13,7 +13,7 @@ export default function Contacts({children}:any){
                 <Link href='https://www.linkedin.com/in/zhaoyang-lu-3a2814261/' target='_blank'><Image priority={true} src='/linkedin.png'width={50} height={50} alt='linkedin icon'></Image></Link>
                 <EmailToster></EmailToster>
               </div>
-              <div>
+              <div className='divide-y divide-slate-900 '>
                 {children}
               </div>
             </div>
