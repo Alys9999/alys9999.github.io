@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={jura.className}>
       <head>
-         <title>Zhaoyang Lu's Portfolio</title>
+         <title>Zhaoyang Lu&apos;s Portfolio</title>
       </head>
       <body>
       <Header></Header>
